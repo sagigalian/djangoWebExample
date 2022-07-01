@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% include 'main/base.html' %}
+<html>
+{% load static %}
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{% static 'myprofile.css' %}">
+</head>
+<body>
+	<div class='container'>
+		<h1>Profile Name: {{currnetPeople.name}}</h1>
+		<h1>Profile Phone: {{currnetPeople.phone}}</h1>
+		<h1>Profile Email: {{currnetPeople.email}}</h1>	
+	</div>
+</body>
+</html>
+

@@ -1,0 +1,19 @@
+*{
+	margin: 0;
+}
+.navbar{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 15%;
+	background-color: #111;
+	text-align: center;
+	display: block;
+}
+.navbar a{
+	font-size: 32px;
+	display: block;
+	color: cyan;
+	margin-top: 20px;
+}

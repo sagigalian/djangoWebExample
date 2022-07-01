@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Website 2</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'users.css' %}">
+</head>
+<body>
+
+	<div class='container'>
+		<table class="styled-table">
+    		<thead>
+		        <tr>
+		            <th>Name</th>
+		            <th>Phone</th>
+		            <th>Email</th>
+		        </tr>
+    		</thead>
+		    <tbody>
+		        {% for i in users %}
+					<tr>
+						<td>{{i.name}}</td>
+						<td>{{i.phone}}</td>
+						<td>{{i.email}}</td>
+					</tr>
+				{% endfor %}
+		    </tbody>
+		</table>
+
+
+
+	</div>
+	
+	
+	
+</body>
+</html>
+{% include 'main/base.html' %}

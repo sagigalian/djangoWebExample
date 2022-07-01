@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Website 2</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'manager.css' %}">
+</head>
+<body>
+
+	<form class='container' method="post">
+		<table>
+			{% csrf_token %}
+			<h1>Manager Zone !</h1>
+			{{form.as_table}}
+			
+		</table>
+		<button type="submit" class="submit">Enter As Manager</button>
+	</form>
+			
+	
+	
+</body>
+</html>
+{% include 'main/base.html' %}
